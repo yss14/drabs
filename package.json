@@ -1,14 +1,14 @@
 {
     "name": "drabs",
     "description": "Drips and drabs of helper utilities.",
-    "homepage": "https://github.com/joshuacc/drabs",
-    "author": "Joshua Clanton (http://joshuaclanton.com)",
+    "homepage": "https://github.com/yss14/drabs",
+    "author": "Yannick Stachelscheid",
     "main": "build/drabs.js",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git://github.com/joshuacc/drabs.git"
+        "url": "https://github.com/yss14/drabs.git"
     },
     "scripts": {
         "build": "babel src -d build --copy-files",
