@@ -6,12 +6,18 @@ The name is a pun on the ([incorrect][phrase]) phrase "drips and drabs", meaning
 
 In addition to GitHub issues, discussion of Drabs is also welcome on the [JS Drip Google Group][group].
 
-## How to Contribute
+## How to use
+Install via `npm install drabs` or `yarn add drabs`
 
-* Maintain the existing coding style (partially enforced by JSHint).
-* Don't edit the files in `dist`. We will build those from `src` before each release.
-* If possible, run JSHint and the Jasmine specs before sending a pull request (details below).
-* If possible, include Jasmine specs when contributing new features.
+```
+import {deepGet} from 'drabs';
+
+let val = deepGet(obj, ["Viola", "Harry", "Sally"], {});
+
+//or
+
+let val = deepGet(obj, ["Viola.Harry.Sally"], {});
+```
 
 ## License
 
