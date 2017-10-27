@@ -3,21 +3,29 @@
     "description": "Drips and drabs of helper utilities.",
     "homepage": "https://github.com/joshuacc/drabs",
     "author": "Joshua Clanton (http://joshuaclanton.com)",
-    "main": "dist/drabs.js",
-    "version": "0.0.1",
+    "main": "build/drabs.js",
+    "version": "0.0.2",
     "license": "MIT",
-
-    "repository" : {
+    "repository": {
         "type": "git",
         "url": "git://github.com/joshuacc/drabs.git"
     },
-
+    "scripts": {
+        "build": "babel src -d build --copy-files",
+        "build:watch": "babel src -w -d build --copy-files",
+        "lint": "eslint src/**; exit 0",
+        "lint:watch": "esw -w src/**",
+        "prepublish": "npm run build"
+    },
     "devDependencies": {
-        "grunt": "~0.4.0",
-        "grunt-contrib-jasmine": "~0.4.2",
-        "grunt-contrib-uglify": "~0.2.0",
-        "grunt-contrib-watch": "~0.3.1",
-        "grunt-contrib-jshint": "~0.4.3",
-        "grunt-contrib-concat": "~0.3.0"
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-eslint": "^8.0.1",
+        "babel-loader": "^7.1.2",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "webpack": "^3.8.1"
     }
 }
