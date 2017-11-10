@@ -1,0 +1,1 @@
+export function deepGet(obj: Object, props: string | Array<string>, defaultValue: any): any;
